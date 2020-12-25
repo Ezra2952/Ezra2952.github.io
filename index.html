@@ -96,12 +96,14 @@
         window.addEventListener("DOMContentLoaded", event => {
             const audio = document.querySelector("audio");
             audio.volume = 0.2;
-            if(window.close){
-                audio.paused();
+            audio.play();
+            if(document.hidden){
+                audio.pause();
             }else{
                 audio.play();
             }
         });
+
 
         document.addEventListener('DOMContentLoaded', function () {
             var script = document.createElement('script');
