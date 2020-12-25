@@ -193,7 +193,11 @@
         }
     </script>
     <script type="text/javascript">
+        window.addEventListener('DOMContentLoaded', function (e) {
+          x.play();
+        });
         window.addEventListener('beforeunload', function (e) {
+          x.pause();
           e.preventDefault();
           e.returnValue = '';
         });
