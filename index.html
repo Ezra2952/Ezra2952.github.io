@@ -101,8 +101,9 @@
         });
     </script>
     <script>
-        window.addEventListener("beforeunload",event => {
+        window.addEventListener("unload", event => {
             const audio = document.querySelector("audio");
+            audio.volume = 0.02;
             audio.pause();
         });
     </script>
@@ -189,7 +190,8 @@
 
 <body>
     <div id="snow"></div>
-    <audio src="assets/images/jinglebell.mp3"></audio>
+    <audio src="https://firebasestorage.googleapis.com/v0/b/jcu-mcc.appspot.com/o/jinglebell.mp3?alt=media&token=30fd4186-af35-44c3-9092-45763c692468"></audio>
+    <!-- <audio src="assets/images/jinglebell.mp3"></audio> -->
     <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
         <nav
             class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-toggleable-sm bg-color transparent">
