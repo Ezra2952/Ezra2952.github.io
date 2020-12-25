@@ -185,10 +185,12 @@
                 x.volume = 0.08;
                 x.pause();
                 document.getElementById("sound").innerHTML = "Sound On";
+                document.getElementById("sound").className = "btn btn-md btn-green display-4";
             } else {
                 x.volume = 0.08;
                 x.play();
                 document.getElementById("sound").innerHTML = "Sound off";
+                document.getElementById("sound").className = "btn btn-md btn-red display-4";
             }
         }
     </script>
@@ -198,8 +200,6 @@
         });
         window.addEventListener('beforeunload', function (e) {
           x.pause();
-          e.preventDefault();
-          e.returnValue = '';
         });
       </script>
     <!-- <audio src="assets/images/jinglebell.mp3"></audio> -->
@@ -261,7 +261,7 @@
                     <div class="mbr-section-btn">
 
                         <a class="btn btn-md btn-primary display-4" href="index.html" onclick="showAlert()">Log In</a>
-                        <a class="btn btn-md btn-primary display-4" onclick="playAudio()" id="sound">Sound Off</a>>
+                        <a class="btn btn-md btn-red display-4" onclick="playAudio()" id="sound">Sound Off</a>
                         <div class="alert" id="alertbox" style="display:none">
                             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                             <strong>Coming Soon!</strong> We are currently working on this feature and will launch soon!

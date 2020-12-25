@@ -106,6 +106,20 @@ body {
 .bg-danger {
   background-color: #b1a374 !important;
 }
+.btn-red,
+.btn-red:active {
+  background-color: #d43744 !important;
+  border-color: #d43744 !important;
+  color: #ffffff !important;
+}
+
+.btn-green,
+.btn-green:active {
+  background-color: #37d459 !important;
+  border-color: #37d459 !important;
+  color: #ffffff !important;
+}
+
 .btn-primary,
 .btn-primary:active {
   background-color: #149dcc !important;
