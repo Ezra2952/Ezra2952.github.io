@@ -92,19 +92,33 @@
                 x.style.display = "none";
             }
         }
-
+    </script>
+    <script>
         window.addEventListener("DOMContentLoaded", event => {
             const audio = document.querySelector("audio");
-            audio.volume = 0.2;
+            audio.volume = 0.02;
             audio.play();
-            if(document.hidden){
-                audio.pause();
-            }else{
-                audio.play();
-            }
         });
+    </script>
+    <script>
+        window.addEventListener("beforeunload",event => {
+            const audio = document.querySelector("audio");
+            audio.pause();
+        });
+    </script>
+    <!-- <script>
+        var audio = document.createElement("audio");
+        audio.src = "assets/images/jinglebell.mp3";
 
-
+        audio.addEventListener("canplaythrough", function () {
+            setTimeout(function () {
+                audio.pause();
+                alert("Audio Stop Successfully");
+            },
+                10000);
+        }, false);
+    </script> -->
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             var script = document.createElement('script');
             script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
