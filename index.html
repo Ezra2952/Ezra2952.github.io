@@ -172,35 +172,30 @@
 <body>
     <div id="snow"></div>
     <audio id="christ">
-        <source src="https://firebasestorage.googleapis.com/v0/b/jcu-mcc.appspot.com/o/jinglebell.mp3?alt=media&token=30fd4186-af35-44c3-9092-45763c692468">
-            Your browser does not support the audio element.
+        <source
+            src="https://firebasestorage.googleapis.com/v0/b/jcu-mcc.appspot.com/o/jinglebell.mp3?alt=media&token=30fd4186-af35-44c3-9092-45763c692468">
+        Your browser does not support the audio element.
     </audio>
     <script>
         var x = document.getElementById("christ");
         x.volume = 0.08;
         x.play();
-        if(document.hi)
         function playAudio() {
-            if(x.duration > 0 && !x.paused){
+            if (x.duration > 0 && !x.paused) {
                 x.volume = 0.08;
                 x.pause();
                 document.getElementById("sound").innerHTML = "Sound On";
-            }else{
+            } else {
                 x.volume = 0.08;
                 x.play();
                 document.getElementById("sound").innerHTML = "Sound off";
             }
-        } 
+        }
     </script>
     <script type="text/javascript">
-        window.addEventListener("beforeunload", function (e) {
-            
-            var x = document.getElementById("christ");
-            x.pause();
-     
-          // added the delay otherwise database operation will not work
-          for (var i = 0; i < 500000000; i++) { }
-          return undefined;
+        window.addEventListener('beforeunload', function (e) {
+          e.preventDefault();
+          e.returnValue = '';
         });
       </script>
     <!-- <audio src="assets/images/jinglebell.mp3"></audio> -->
