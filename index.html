@@ -93,13 +93,13 @@
             }
         }
     </script>
-    <script>
+    <!-- <script>
         window.addEventListener("DOMContentLoaded", event => {
             const audio = document.querySelector("audio");
             audio.volume = 0.02;
             audio.play();
         });
-    </script>
+    </script> -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var script = document.createElement('script');
@@ -171,7 +171,26 @@
 
 <body>
     <div id="snow"></div>
-    <audio src="https://firebasestorage.googleapis.com/v0/b/jcu-mcc.appspot.com/o/jinglebell.mp3?alt=media&token=30fd4186-af35-44c3-9092-45763c692468"></audio>
+    <audio id="christ">
+        <source src="https://firebasestorage.googleapis.com/v0/b/jcu-mcc.appspot.com/o/jinglebell.mp3?alt=media&token=30fd4186-af35-44c3-9092-45763c692468">
+            Your browser does not support the audio element.
+    </audio>
+    <script>
+        var x = document.getElementById("christ");
+        x.volume = 0.08;
+        x.play();
+        function playAudio() {
+            if(x.duration > 0 && !x.paused){
+                x.volume = 0.08;
+                x.pause();
+                document.getElementById("sound").innerHTML = "Sound On";
+            }else{
+                x.volume = 0.08;
+                x.play();
+                document.getElementById("sound").innerHTML = "Sound off";
+            }
+        } 
+    </script>
     <!-- <audio src="assets/images/jinglebell.mp3"></audio> -->
     <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
         <nav
@@ -230,7 +249,8 @@
                     <p class="mbr-text pb-3 mbr-fonts-style display-5">WARMLY WELCOME</p>
                     <div class="mbr-section-btn">
 
-                        <a class="btn btn-md btn-primary display-4" href="index.html#" onclick="showAlert()">Log In</a>
+                        <a class="btn btn-md btn-primary display-4" href="index.html" onclick="showAlert()">Log In</a>
+                        <a class="btn btn-md btn-primary display-4" onclick="playAudio()" id="sound">Sound Off</a>>
                         <div class="alert" id="alertbox" style="display:none">
                             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                             <strong>Coming Soon!</strong> We are currently working on this feature and will launch soon!
