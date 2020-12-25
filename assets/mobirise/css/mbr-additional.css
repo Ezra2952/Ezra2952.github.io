@@ -1115,22 +1115,113 @@ section.lazy-placeholder:after {
   color: #ffffff;
   text-align: center;
 }
-.cid-s9BWMA8fFY {
+.cid-sjSbSWvpPV {
   padding-top: 45px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
+  padding-bottom: 30px;
+  background: linear-gradient(45deg, #c4bc3b, #cc2952);
 }
-.cid-s9BWMA8fFY .mbr-section-subtitle {
+@media (min-width: 992px) {
+  .cid-sjSbSWvpPV .mbr-figure {
+    padding-left: 4rem;
+  }
+}
+@media (max-width: 991px) {
+  .cid-sjSbSWvpPV .mbr-figure {
+    padding-top: 3rem;
+  }
+}
+.cid-sjSbSWvpPV .media-container-row {
+  flex-direction: row-reverse;
+  -webkit-flex-direction: row-reverse;
+}
+@media (min-width: 992px) {
+  .cid-sjSbSWvpPV .media-container-row .mbr-figure {
+    padding-left: 0;
+    padding-right: 4rem;
+  }
+}
+.cid-s1HvJ2R0Vg {
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #c4bc3b;
+}
+.cid-s1HvJ2R0Vg .mbr-section-subtitle {
+  color: #efefef;
+}
+.cid-s1HvJ2R0Vg .media-row {
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.cid-s1HvJ2R0Vg .team-item {
+  transition: all .2s;
+  margin-bottom: 2rem;
+}
+.cid-s1HvJ2R0Vg .team-item .item-image img {
+  width: 100%;
+}
+.cid-s1HvJ2R0Vg .team-item .item-name p {
+  margin-bottom: 0;
+}
+.cid-s1HvJ2R0Vg .team-item .item-role p {
+  margin-bottom: 0;
+}
+.cid-s1HvJ2R0Vg .team-item .item-social {
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+}
+.cid-s1HvJ2R0Vg .team-item .item-social .socicon {
+  color: #232323;
+  font-size: 17px;
+}
+.cid-s1HvJ2R0Vg .team-item .item-caption {
+  background: #efefef;
+}
+.cid-s1HvJ2R0Vg H2 {
+  color: #ffffff;
+}
+.cid-sgSjqRn8mh {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #c4bc3b;
+}
+.cid-sgSjqRn8mh .mbr-section-subtitle {
   color: #767676;
 }
-.cid-s9BY7Av6c6 {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  background-color: #ffffff;
+.cid-sgSjqRn8mh .media-row {
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
 }
-.cid-s9BY7Av6c6 .mbr-text,
-.cid-s9BY7Av6c6 blockquote {
-  color: #767676;
+.cid-sgSjqRn8mh .team-item {
+  transition: all .2s;
+  margin-bottom: 2rem;
+}
+.cid-sgSjqRn8mh .team-item .item-image img {
+  width: 100%;
+}
+.cid-sgSjqRn8mh .team-item .item-name p {
+  margin-bottom: 0;
+}
+.cid-sgSjqRn8mh .team-item .item-role p {
+  margin-bottom: 0;
+}
+.cid-sgSjqRn8mh .team-item .item-social {
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+}
+.cid-sgSjqRn8mh .team-item .item-social .socicon {
+  color: #232323;
+  font-size: 17px;
+}
+.cid-sgSjqRn8mh .team-item .item-caption {
+  background: #efefef;
 }
 .cid-scZ1L8kiPn {
   padding-top: 30px;
@@ -1209,97 +1300,22 @@ section.lazy-placeholder:after {
   -webkit-transition: 0.2s background ease-in-out;
   transition: 0.2s background ease-in-out;
 }
-.cid-scYYV9SZNs {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-image: url("../../../assets/images/james-cook-university-singapore-campus-1631x1080.jpeg");
+.cid-s9BWMA8fFY {
+  padding-top: 45px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
 }
-.cid-scYYV9SZNs .mbr-section-subtitle {
-  color: #232323;
-  font-weight: 300;
+.cid-s9BWMA8fFY .mbr-section-subtitle {
+  color: #767676;
 }
-.cid-scYYV9SZNs .number-wrap {
-  color: #232323;
-  border-color: rgba(255, 255, 255, 0.15);
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  padding: 5px 10px 13px 10px;
-  margin: 0;
-  min-width: 118px;
-  border-radius: 2px;
-  max-width: 100%;
+.cid-s9BY7Av6c6 {
+  padding-top: 15px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
 }
-.cid-scYYV9SZNs .number {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 55px;
-  text-transform: none;
-  letter-spacing: -2px;
-  word-spacing: 0;
-  line-height: 1.3;
-  color: #232323;
-}
-.cid-scYYV9SZNs .period {
-  display: block;
-  padding-top: 2px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-.cid-scYYV9SZNs .dot {
-  position: absolute;
-  top: -10px;
-  right: -1em;
-  width: 1em;
-  display: block;
-  height: 83%;
-  overflow: hidden;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 89.65px;
-  text-transform: none;
-  letter-spacing: 0;
-  word-spacing: 0;
-  color: #232323;
-}
-.cid-scYYV9SZNs .countdown-cont {
-  max-width: 700px;
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .cid-scYYV9SZNs .dot {
-    display: none;
-  }
-}
-@media (max-width: 543px) {
-  .cid-scYYV9SZNs .number-wrap {
-    margin-bottom: 15px;
-  }
-}
-@media (max-width: 550px) {
-  .cid-scYYV9SZNs .col-xs-3 {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 25%;
-    flex: 0 0 25%;
-  }
-  .cid-scYYV9SZNs .number-wrap {
-    min-width: auto;
-  }
-}
-@media (max-width: 440px) {
-  .cid-scYYV9SZNs .number,
-  .cid-scYYV9SZNs .dot {
-    font-size: 40px;
-  }
-}
-@media (max-width: 380px) {
-  .cid-scYYV9SZNs .period {
-    font-size: 0.8rem;
-  }
-}
-.cid-scYYV9SZNs H2 {
-  color: #232323;
+.cid-s9BY7Av6c6 .mbr-text,
+.cid-s9BY7Av6c6 blockquote {
+  color: #767676;
 }
 .cid-s4BzRQtIi1 {
   padding-top: 30px;
@@ -1418,49 +1434,6 @@ section.lazy-placeholder:after {
   -webkit-transition: 0.2s background ease-in-out;
   transition: 0.2s background ease-in-out;
   background: linear-gradient(to left, #554346, #45505b) !important;
-}
-.cid-s1HvJ2R0Vg {
-  padding-top: 30px;
-  padding-bottom: 0px;
-  background-image: url("../../../assets/images/cover-photo-2000x1013.jpg");
-}
-.cid-s1HvJ2R0Vg .mbr-section-subtitle {
-  color: #efefef;
-}
-.cid-s1HvJ2R0Vg .media-row {
-  display: -webkit-flex;
-  justify-content: center;
-  -webkit-justify-content: center;
-}
-.cid-s1HvJ2R0Vg .team-item {
-  transition: all .2s;
-  margin-bottom: 2rem;
-}
-.cid-s1HvJ2R0Vg .team-item .item-image img {
-  width: 100%;
-}
-.cid-s1HvJ2R0Vg .team-item .item-name p {
-  margin-bottom: 0;
-}
-.cid-s1HvJ2R0Vg .team-item .item-role p {
-  margin-bottom: 0;
-}
-.cid-s1HvJ2R0Vg .team-item .item-social {
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  -webkit-flex-wrap: wrap;
-  -webkit-justify-content: center;
-}
-.cid-s1HvJ2R0Vg .team-item .item-social .socicon {
-  color: #232323;
-  font-size: 17px;
-}
-.cid-s1HvJ2R0Vg .team-item .item-caption {
-  background: #efefef;
-}
-.cid-s1HvJ2R0Vg H2 {
-  color: #ffffff;
 }
 .cid-s1HKv03LR8 {
   padding-top: 45px;

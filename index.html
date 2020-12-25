@@ -1,507 +1,1055 @@
 <!DOCTYPE html>
-<html  >
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/myanmar-community-club-196x89.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>JCU-MCC</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
-  <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/gallery/style.css">
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <link rel="shortcut icon" href="assets/images/mcc_favicon.png" type="image/x-icon">
+    <meta name="description" content="">
+
+
+    <title>JCU-MCC</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="stylesheet" href="assets/gallery/style.css">
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171812706-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-171812706-1');
+    </script>
+
+    <style>
+        #rcorners4 {
+            border-radius: 15px;
+        }
+
+        #rtopleftright {
+            border-radius: 15px 15px 0px 0px;
+            box-shadow: 5px 0px 10px grey;
+        }
+
+        #rbtleftright {
+            border-radius: 0px 0px 15px 15px;
+            box-shadow: 5px 5px 10px grey;
+        }
+
+        .alert {
+            padding: 20px;
+            background-color: #dcf746;
+            color: rgb(0, 0, 0);
+            width: 50%;
+            margin: auto;
+            border-radius: 15px;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+
+        #snow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1000;
+        }
+    </style>
+    <script>
+        function showAlert() {
+            var x = document.getElementById("alertbox");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        window.addEventListener("DOMContentLoaded", event => {
+            const audio = document.querySelector("audio");
+            audio.volume = 0.07;
+            audio.play();
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var script = document.createElement('script');
+            script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+            script.onload = function () {
+                particlesJS("snow", {
+                    "particles": {
+                        "number": {
+                            "value": 200,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#ffffff"
+                        },
+                        "opacity": {
+                            "value": 0.7,
+                            "random": false,
+                            "anim": {
+                                "enable": false
+                            }
+                        },
+                        "size": {
+                            "value": 5,
+                            "random": true,
+                            "anim": {
+                                "enable": false
+                            }
+                        },
+                        "line_linked": {
+                            "enable": false
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 5,
+                            "direction": "bottom",
+                            "random": true,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false,
+                            "attract": {
+                                "enable": true,
+                                "rotateX": 300,
+                                "rotateY": 1200
+                            }
+                        }
+                    },
+                    "interactivity": {
+                        "events": {
+                            "onhover": {
+                                "enable": false
+                            },
+                            "onclick": {
+                                "enable": false
+                            },
+                            "resize": false
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+            document.head.append(script);
+        });
+    </script>
+
 </head>
+
 <body>
-  <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
+    <audio src="assets/images/jinglebell.mp3"></audio>
+    <section class="menu cid-qTkzRZLJNu" once="menu" id="menu1-0">
 
-    
 
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-toggleable-sm bg-color transparent">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-        <div class="menu-logo">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="https://www.facebook.com/JCUMyanmar">
-                         <img src="assets/images/myanmar-community-club-196x89.png" alt=" jcumyanmar" title="" style="height: 3.8rem;">
-                    </a>
-                </span>
-                
-            </div>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item">
-                    <a class="nav-link link text-black display-4" href="index.html#header2-1">
-                        <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
-                        Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-black display-4" href="index.html#header3-h">
-                        <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
-                        About Us
-                    </a>
-                </li></ul>
-            
-        </div>
-    </nav>
-</section>
 
-<section class="engine"><a href="https://jcumyanmar.me"></a></section><section class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1">
+        <nav
+            class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-toggleable-sm bg-color transparent">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="https://www.facebook.com/JCUMyanmar">
+                            <img src="assets/images/mcc_logo.png" alt="JCU MCC Logo" title="" style="height: 3.8rem;">
+                        </a>
+                    </span>
 
-    
-
-    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(118, 118, 118);"></div>
-
-    <div class="container align-center">
-        <div class="row justify-content-md-center">
-            <div class="mbr-white col-md-10">
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
-                    MYANMAR <br>COMMUNITY CLUB</h1>
-                
-                <p class="mbr-text pb-3 mbr-fonts-style display-5">WARMLY WELCOME</p>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="index.html#content4-2g">LEARN MORE</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
-        <a href="#next">
-            <i class="mbri-down mbr-iconfont"></i>
-        </a>
-    </div>
-</section>
-
-<section class="mbr-section content4 cid-s9BWMA8fFY" id="content4-2g">
-
-    
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">
-                    Covid-19 cases in Myanmar</h2>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="mbr-section article content1 cid-s9BY7Av6c6" id="content1-2h">
-    
-     
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-12">
-                <iframe src="https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&year=latest&time=2020-08-15..latest&country=~MMR&region=Asia&casesMetric=true&interval=total&hideControls=true&smoothing=0&pickerMetric=location&pickerSort=asc" width="100%" height="600px"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="header1 cid-scZ1L8kiPn" id="header16-2k">
-
-    
-
-    
-
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10 align-center">
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2">Wish letters from JCU Myanmar Almuni Students</h1>
-                
-                
-                
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="mbr-gallery mbr-slider-carousel cid-scYZxBTETA" id="gallery4-2j">
-
-    
-
-    <div class="container">
-        <div><!-- Gallery --><div class="gallery-row"><div class="mbr-gallery-layout-default"><div><div class="row-first row justify-content-center m-0"><div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false"><div href="#lb-gallery4-2j" data-slide-to="0" data-toggle="modal"><img src="assets/images/aung-myint-myat-htet-1080x1080-800x800.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false"><div href="#lb-gallery4-2j" data-slide-to="1" data-toggle="modal"><img src="assets/images/aung-thant-myat-1080x1080-800x800.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false"><div href="#lb-gallery4-2j" data-slide-to="2" data-toggle="modal"><img src="assets/images/hnin-thiri-zin-myint-1080x1080-800x800.jpg" alt="" title=""><span class="icon-focus"></span></div></div></div><div class="row-second row justify-content-center m-0"><div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false"><div href="#lb-gallery4-2j" data-slide-to="3" data-toggle="modal"><img src="assets/images/hom-nan-nwe-htun-1080x1080-800x800.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false"><div href="#lb-gallery4-2j" data-slide-to="4" data-toggle="modal"><img src="assets/images/shoon-lei-tun-1080x1080-800x800.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false"><div href="#lb-gallery4-2j" data-slide-to="5" data-toggle="modal"><img src="assets/images/k-phoo-thaw-naing-1080x1080-800x800.jpg" alt="" title=""><span class="icon-focus"></span></div></div></div></div><div class="clearfix"></div></div></div><!-- Lightbox --><div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery4-2j"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><ol class="carousel-indicators"><li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="0"></li><li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="1"></li><li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="2"></li><li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="3"></li><li data-app-prevent-settings="" data-target="#lb-gallery4-2j" class=" active" data-slide-to="4"></li><li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="5"></li></ol><div class="carousel-inner"><div class="carousel-item"><img src="assets/images/aung-myint-myat-htet-1080x1080.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/aung-thant-myat-1080x1080.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/hnin-thiri-zin-myint-1080x1080.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/hom-nan-nwe-htun-1080x1080.jpg" alt="" title=""></div><div class="carousel-item active"><img src="assets/images/shoon-lei-tun-1080x1080.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/k-phoo-thaw-naing-1080x1080.jpg" alt="" title=""></div></div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery4-2j"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery4-2j"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span></a><a class="close" href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a></div></div></div></div></div>
-    </div>
-
-</section>
-
-<section class="mbr-section content4 cid-s4BzRQtIi1" id="content4-o">
-
-    
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center pb-3 mbr-fonts-style display-2">Articles</h2>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="features3 cid-scZ60K4ohb" id="features3-2o">
-
-    
-
-    
-    <div class="container">
-        <div class="media-container-row">
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="assets/images/online-education-844x563.jpg" alt="jcumyanmar" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">Do’s and Don’ts of Online Classes</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Due to the rapid advancement of technology students nowadays can study entirely online while still socializing with .....&nbsp;</p>
-                    </div>
-                    <div class="mbr-section-btn text-center"><a href="articles_01.html#content5-p" class="btn btn-primary display-4">
-                            Learn More
-                        </a></div>
                 </div>
             </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="assets/images/struggles-of-student-life-in-singapore-628x419.png" alt="jcumyanmar" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">Struggles of student life in Singapore</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            Singapore is one of the ideal destinations in Southeast Asia for Studying Abroad for us students from .....</p>
-                    </div>
-                    <div class="mbr-section-btn text-center">
-                        <a href="https://jcumyanmar.co" class="btn btn-primary display-4">
-                            Learn More
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="index.html#header2-1">
+                            <span class="mbri-home mbr-iconfont mbr-iconfont-btn"></span>
+                            Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black display-4" href="index.html#header3-h">
+                            <span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                            About Us
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
+
             </div>
+        </nav>
+    </section>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="assets/images/article03-social-image-628x419.png" alt="jcumyanmar" title="">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">How to be effective in online classes</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            The COVID-19 resulted in the shutdown of schools all over the world.About 1.2 billion children worldwide are ....</p>
-                    </div>
-                    <div class="mbr-section-btn text-center"><a href="articles_03.html#content5-1o" class="btn btn-primary display-4">
-                            Learn More
-                        </a></div>
-                </div>
-            </div>
+    <section class="cid-qTkA127IK8 mbr-fullscreen mbr-parallax-background" id="header2-1">
 
-            
-        </div>
-    </div>
-</section>
 
-<section class="header1 cid-sd06SzfeDt" id="header16-2r">
 
-    
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(118, 118, 118);"></div>
 
-    
+        <div class="container align-center">
+            <div class="row justify-content-md-center">
+                <div class="mbr-white col-md-10">
+                    <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
+                        MYANMAR <br>COMMUNITY CLUB</h1>
 
-    <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10 align-center">
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2">
-                    Our Activities</h1>
-                
-                
-                
-            </div>
-        </div>
-    </div>
+                    <p class="mbr-text pb-3 mbr-fonts-style display-5">WARMLY WELCOME</p>
+                    <div class="mbr-section-btn">
 
-</section>
-
-<section class="mbr-gallery mbr-slider-carousel cid-scZasHb8vV" id="gallery2-2q">
-
-    
-
-    <div class="container">
-        <div><!-- Filter --><div class="mbr-gallery-filter container gallery-filter-active"><ul buttons="0"><li class="mbr-gallery-filter-all"><a class="btn btn-md btn-primary-outline active display-7" href="">All</a></li></ul></div><!-- Gallery --><div class="mbr-gallery-row"><div class="mbr-gallery-layout-default"><div><div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="0" data-toggle="modal"><img src="assets/images/img-6242-676x380-540x377.jpeg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Culture Show"><div href="#lb-gallery2-2q" data-slide-to="1" data-toggle="modal"><img src="assets/images/myanmar-mingalarpar-1-676x450-644x450.jpeg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Let's Unite"><div href="#lb-gallery2-2q" data-slide-to="2" data-toggle="modal"><img src="assets/images/82879847-150303146413822-6276434253097992192-o-492x328-492x328.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="3" data-toggle="modal"><img src="assets/images/img-5143-2000x1500-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="4" data-toggle="modal"><img src="assets/images/img-5165-2000x1500-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="5" data-toggle="modal"><img src="assets/images/img-6170-2000x1500-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="6" data-toggle="modal"><img src="assets/images/img-6206-2000x1500-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="7" data-toggle="modal"><img src="assets/images/img-6218-2000x1125-800x450.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="8" data-toggle="modal"><img src="assets/images/img-6224-2000x1500-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="9" data-toggle="modal"><img src="assets/images/img-6231-2000x1500-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Let's Unite"><div href="#lb-gallery2-2q" data-slide-to="10" data-toggle="modal"><img src="assets/images/82629561-150171676426969-1721509680640950272-o-1-1644x1500-800x606.jpeg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Let's Unite"><div href="#lb-gallery2-2q" data-slide-to="11" data-toggle="modal"><img src="assets/images/83147104-150235663087237-3814717809741529088-o-1350x1080-800x640.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Let's Unite"><div href="#lb-gallery2-2q" data-slide-to="12" data-toggle="modal"><img src="assets/images/83173433-150300599747410-6487413547872550912-o-2000x1333-800x533.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Let's Unite"><div href="#lb-gallery2-2q" data-slide-to="13" data-toggle="modal"><img src="assets/images/letsunite-2000x1333-800x533.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Culture Show"><div href="#lb-gallery2-2q" data-slide-to="14" data-toggle="modal"><img src="assets/images/32186533-1933240426715908-8804020243346227200-o-2000x1500-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Culture Show"><div href="#lb-gallery2-2q" data-slide-to="15" data-toggle="modal"><img src="assets/images/57174910-2468608353179110-5312320051989184512-n-960x720-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Culture Show"><div href="#lb-gallery2-2q" data-slide-to="16" data-toggle="modal"><img src="assets/images/67500559-2669206483119295-7436907053240549376-o-2000x1333-800x533.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Culture Show"><div href="#lb-gallery2-2q" data-slide-to="17" data-toggle="modal"><img src="assets/images/67755472-2669206649785945-1195774128485826560-o-2000x1333-800x533.jpg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Culture Show"><div href="#lb-gallery2-2q" data-slide-to="18" data-toggle="modal"><img src="assets/images/mingalar-2000x1500-800x528.jpeg" alt="" title=""><span class="icon-focus"></span></div></div><div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false" data-tags="Welcome Party"><div href="#lb-gallery2-2q" data-slide-to="19" data-toggle="modal"><img src="assets/images/46508463-2236564243050190-8938994942152278016-o-2000x1500-800x600.jpg" alt="" title=""><span class="icon-focus"></span></div></div></div></div><div class="clearfix"></div></div></div><!-- Lightbox --><div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1" data-keyboard="true" data-interval="false" id="lb-gallery2-2q"><div class="modal-dialog"><div class="modal-content"><div class="modal-body"><div class="carousel-inner"><div class="carousel-item active"><img src="assets/images/img-6242-676x380.jpeg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/myanmar-mingalarpar-1-676x450.jpeg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/82879847-150303146413822-6276434253097992192-o-492x328.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-5143-2000x1500.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-5165-2000x1500.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-6170-2000x1500.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-6206-2000x1500.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-6218-2000x1125.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-6224-2000x1500.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/img-6231-2000x1500.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/82629561-150171676426969-1721509680640950272-o-1-1644x1500.jpeg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/83147104-150235663087237-3814717809741529088-o-1350x1080.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/83173433-150300599747410-6487413547872550912-o-2000x1333.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/letsunite-2000x1333.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/32186533-1933240426715908-8804020243346227200-o-2000x1500.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/57174910-2468608353179110-5312320051989184512-n-960x720.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/67500559-2669206483119295-7436907053240549376-o-2000x1333.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/67755472-2669206649785945-1195774128485826560-o-2000x1333.jpg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/mingalar-2000x1500.jpeg" alt="" title=""></div><div class="carousel-item"><img src="assets/images/46508463-2236564243050190-8938994942152278016-o-2000x1500.jpg" alt="" title=""></div></div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#lb-gallery2-2q"><span class="mbri-left mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#lb-gallery2-2q"><span class="mbri-right mbr-iconfont" aria-hidden="true"></span><span class="sr-only">Next</span></a><a class="close" href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a></div></div></div></div></div>
-    </div>
-
-</section>
-
-<section class="team1 cid-s1HvJ2R0Vg mbr-parallax-background" id="team1-c">
-    
-    
-    <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(35, 35, 35);">
-    </div>
-    <div class="container align-center">
-        <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2"><strong>
-            OUR AWESOME TEAM
-        </strong></h2>
-        
-        <div class="row media-row">
-            
-        <div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="assets/images/kyawphyoaung-300x300.jpg" alt="" title="">
-                </div>
-                <div class="item-caption py-3">
-                    <div class="item-name px-2">
-                        <p class="mbr-fonts-style display-5">
-                           KYAW PHYO AUNG</p>
-                    </div>
-                    <div class="item-role px-2">
-                        <p>PRESIDENT</p>
-                    </div>
-                    <div class="item-social pt-2">
-                        <a href="https://www.instagram.com/kyawphyoaung.harry/" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
-                        </a>
-                        <a href="https://www.facebook.com/kpaharry" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/kyawphyoaung/" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-invision socicon"></span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ " target="_blank">
-                            
-                        </a>
-                        <a href="https://www.instagram.com//" target="_blank">
-                            
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw" target="_blank">    
-                            
-                        </a>
-                    </div>
-                </div>
-            </div><div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="assets/images/hninpwintphyu-300x294.jpg" alt="" title="">
-                </div>
-                <div class="item-caption py-3">
-                    <div class="item-name px-2">
-                        <p class="mbr-fonts-style display-5">HNIN PWINT PHYU</p>
-                    </div>
-                    <div class="item-role px-2">
-                        <p>SECRETARY</p>
-                    </div>
-                    <div class="item-social pt-2">
-                        <a href="https://www.instagram.com/erryhwan/" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
-                        </a>
-                        <a href="https://www.facebook.com/erry.hwan" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-invision socicon"></span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ " target="_blank">
-                            
-                        </a>
-                        <a href="https://www.instagram.com/ /" target="_blank">
-                            
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw" target="_blank">    
-                            
-                        </a>
-                    </div>
-                </div>
-            </div><div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="assets/images/71145435-113672676688747-7096514891984404480-o-510x510.jpg" alt="" title="">
-                </div>
-                <div class="item-caption py-3">
-                    <div class="item-name px-2">
-                        <p class="mbr-fonts-style display-5">
-                           KYAW PYAE SONE</p>
-                    </div>
-                    <div class="item-role px-2">
-                        <p>VICE-PRESIDENT</p>
-                    </div>
-                    <div class="item-social pt-2">
-                        <a href="https://www.instagram.com/itis_k_goddamnit/" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
-                        </a>
-                        <a href="https://www.facebook.com/kyawpyae.sone.96592" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
-                        </a>
-                        <a href="https://www.linkedin.com/" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-invision socicon"></span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ " target="_blank">
-                            
-                        </a>
-                        <a href="https://www.instagram.com/ /" target="_blank">
-                            
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw" target="_blank">    
-                            
-                        </a>
-                    </div>
-                </div>
-            </div><div class="team-item col-lg-3 col-md-6">
-                <div class="item-image">
-                    <img src="assets/images/5khaing-su-pyae-1-510x598.png" alt="" title="">
-                </div>
-                <div class="item-caption py-3">
-                    <div class="item-name px-2">
-                        <p class="mbr-fonts-style display-5">Khaing Su Pyae</p>
-                    </div>
-                    <div class="item-role px-2">
-                        <p>PERFORMANCE</p>
-                    </div>
-                    <div class="item-social pt-2">
-                        <a href="https://www.instagram.com/khaing_su_pyae/" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=100008457071806" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
-                        </a>
-                        <a href="https://www.linkedin.com" target="_blank">
-                            <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-invision socicon"></span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/ " target="_blank">
-                            
-                        </a>
-                        <a href="https://www.instagram.com/ /" target="_blank">
-                            
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw" target="_blank">    
-                            
-                        </a>
-                    </div>
-                </div>
-            </div></div>    
-    </div>
-</section>
-
-<section class="header7 cid-s1HKv03LR8" id="header7-d">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row">
-
-            <div class="media-content align-right">
-                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">Unity is Strength</h1>
-                <div class="mbr-section-text mbr-white pb-3">
-                    <p class="mbr-text mbr-fonts-style display-5">Presented By JCU Myanmar Community at <br>JCU Singapore Culture Event SP 52 2019</p>
-                </div>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://www.facebook.com/JCUMyanmar/videos/336583627288072">VIEW MORE</a></div>
-            </div>
-
-            <div class="mbr-figure" style="width: 100%;"><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/xA0v2xHVWTY?rel=0&amp;amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=xA0v2xHVWTY" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-
-        </div>
-    </div>
-</section>
-
-<section class="header3 cid-s42CHbeorS mbr-parallax-background" id="header3-h">
-
-    
-
-    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35);">
-    </div>
-
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-figure" style="width: 100%;">
-                <img src="assets/images/social-good-895x748.png" alt=" jcumyanmar" title="">
-            </div>
-
-            <div class="media-content">
-                <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">MCC on Social Media</h1>
-                
-                <div class="mbr-section-text mbr-white pb-3 ">
-                    <p class="mbr-text mbr-fonts-style display-5">Follow our facebook page and Instagram account to get latest update about JCU Myanmar Community Club</p>
-                </div>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4" href="https://www.facebook.com/JCUMyanmar">Facebook</a>
-                    <a class="btn btn-md btn-secondary display-4" href="https://www.instagram.com/jcu_myanmar/">Instagram</a></div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="footer4 cid-s1H6LtvjVs" id="footer4-8">
-
-    
-
-    
-
-    <div class="container">
-        <div class="media-container-row content mbr-white">
-            <div class="col-md-3 col-sm-4">
-                <div class="mb-3 img-logo">
-                    <a href="https://jcumyanmar.me/">
-                        <img src="assets/images/myanmar-community-club-196x89.png" alt=" jcumyanmar" title="">
-                    </a>
-                </div>
-                <p class="mb-3 mbr-fonts-style foot-title display-7">JCU-MCC<br></p>
-                <p class="mbr-text mbr-fonts-style mbr-links-column display-7">
-                    <a href="index.html#team1-c" class="text-white">About Us</a>
-                    <br><a href="index.html#features18-3" class="text-white">A</a>ctivities
-&nbsp;<br><a href="index.html#header3-h" class="text-white">Get In Touch</a>
-                </p>
-            </div>
-            <div class="col-md-4 col-sm-8">
-                <p class="mb-4 foot-title mbr-fonts-style display-7">
-                    JCU Myamar Community Club</p>
-                <p class="mbr-text mbr-fonts-style foot-text display-7">We provide help that any of Burmese students may require, and constantly hold events and performances at the university. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br><br></p>
-            </div>
-            <div class="col-md-4 offset-md-1 col-sm-12">
-                <p class="mb-4 foot-title mbr-fonts-style display-7">
-                    SUBSCRIBE
-                </p>
-                <p class="mbr-text mbr-fonts-style form-text display-7">
-                    Get monthly updates information!</p>
-                <div class="media-container-column" data-form-type="formoid">
-                    <!---Formbuilder Form--->
-                    <form action="https://jcumyanmar.me/" method="POST" class="mbr-form form-with-styler" data-form-title=" jcumyanmar Form"><input type="hidden" name="email" data-form-email="true" value="Mf351RonmS5Pb5mK85UPjmDo5iAbXgHRpS+IeHjyg9GjOF0jhUU5wiSGCMfRiK7O+ByiL763LUVM8o1fxykC5rcwXi+eyjXa/or7y/T4bxnkp07hs3/lYKDYZWoxrofN">
-                        <div class="row form-inline justify-content-center">
-                            <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
-                            <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
-                                                    </div>
+                        <a class="btn btn-md btn-primary display-4" href="index.html#" onclick="showAlert()">Log In</a>
+                        <div class="alert" id="alertbox" style="display:none">
+                            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                            <strong>Coming Soon!</strong> We are currently working on this feature and will launch soon!
                         </div>
-                        <div class="dragArea row form-inline justify-content-center">
-                            <div class="col-auto  form-group " data-for="email">
-                                <input type="email" name="email" placeholder="Email" data-form-field="Email" required="required" class="form-control input-sm input-inverse my-2 display-7" id="email-footer4-8">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+            <a href="#next">
+                <i class="mbri-down mbr-iconfont"></i>
+            </a>
+        </div>
+    </section>
+
+    <section class="cid-sk8w8kI7Ae" id="image2-2x">
+        <div id="snow"></div>
+        <figure class="mbr-figure">
+            <div class="image-block" style="width: 100%;">
+                <img src="assets/images/merrychristmas.jpg" alt="Merry Chirstmas Photo" title="">
+            </div>
+        </figure>
+    </section>
+
+    <section class="header7 cid-sjSbSWvpPV" id="header7-2w">
+
+        <div class="container">
+            <div class="media-container-row">
+
+                <div class="media-content align-right">
+                    <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-2">JCU Online Learning
+                        Experiences short film</h1>
+                    <div class="mbr-section-text mbr-white pb-3">
+                        <p class="mbr-text mbr-fonts-style display-5">Presented by <br>JCU Myanmar Community Club ExCo
+                            members&nbsp;</p>
+                    </div>
+                    <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+                            href="https://fb.watch/2ATHn82LMf/">LEARN MORE</a></div>
+                </div>
+
+                <div class="mbr-figure" style="width: 100%;"><iframe
+                        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FJCUMyanmar%2Fvideos%2F685642465338113%2F&show_text=false&width=560"
+                        width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen="true"></iframe></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="team1 cid-s1HvJ2R0Vg" id="team1-c">
+
+
+
+        <div class="container align-center">
+            <h2 class="pb-3 mbr-fonts-style mbr-section-title display-2"><strong>
+                    OUR AWESOME TEAM
+                </strong></h2>
+
+            <div class="row media-row">
+
+                <div class="team-item col-lg-3 col-md-6">
+                    <div class="item-image">
+                        <img id="rtopleftright" src="assets/images/angela-kyaw-510x510.jpg" alt="" title="">
+                    </div>
+                    <div id="rbtleftright" class="item-caption py-3">
+                        <div class="item-name px-2">
+                            <p class="mbr-fonts-style display-5">Angela Kyaw</p>
+                        </div>
+                        <div class="item-role px-2">
+                            <p>PRESIDENT</p>
+                        </div>
+                        <div class="item-social pt-2">
+                            <a href="https://instagram.com" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                            <a href="https://www.facebook.com/angela.kyaw.3" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-invision socicon"></span>
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item col-lg-3 col-md-6">
+                    <div class="item-image">
+                        <img id="rtopleftright" src="assets/images/shine-line-510x510.jpg" alt="" title="">
+                    </div>
+                    <div id="rbtleftright" class="item-caption py-3">
+                        <div class="item-name px-2">
+                            <p class="mbr-fonts-style display-5">
+                                Shine Lin</p>
+                        </div>
+                        <div class="item-role px-2">
+                            <p>VICE PRESIDENT</p>
+                        </div>
+                        <div class="item-social pt-2">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100028704551850" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-invision socicon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item col-lg-3 col-md-6">
+                    <div class="item-image">
+                        <img id="rtopleftright" src="assets/images/nwdn-file-temp-1605058197635-510x680.jpeg" alt=""
+                            title="">
+                    </div>
+                    <div id="rbtleftright" class="item-caption py-3">
+                        <div class="item-name px-2">
+                            <p class="mbr-fonts-style display-5">
+                                Sharon Kyaw</p>
+                        </div>
+                        <div class="item-role px-2">
+                            <p>SECRETARY</p>
+                        </div>
+                        <div class="item-social pt-2">
+                            <a href="https://www.instagram.com/sharon_kyaw" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                            <a href="https://www.facebook.com/shishi2002z/" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-facebook socicon"></span>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-tiktok socicon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team1 cid-sgSjqRn8mh" id="team1-2v">
+
+
+
+        <div class="container align-center">
+
+
+            <div class="row media-row">
+
+                <div class="team-item col-lg-3 col-md-6">
+                    <div class="item-image">
+                        <img id="rtopleftright"
+                            src="assets/images/88364002-2767495256812853-6040995501824802816-o-510x510.jpg" alt=""
+                            title="">
+                    </div>
+                    <div id="rbtleftright" class="item-caption py-3">
+                        <div class="item-name px-2">
+                            <p class="mbr-fonts-style display-5">Rebecca</p>
+                        </div>
+                        <div class="item-role px-2">
+                            <p>Performance</p>
+                        </div>
+                        <div class="item-social pt-2">
+                            <a href="https://instagram.com" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                            <a href="https://www.facebook.com/Nhh332001s" target="_blank">
+                                <span class="p-1 socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                            <a href="https://www.tiktok.com/@nhh333?lang=en" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-tiktok socicon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item col-lg-3 col-md-6">
+                    <div class="item-image">
+                        <img id="rtopleftright"
+                            src="assets/images/124383349-692248938381791-2690889150658703656-n-510x680.jpeg" alt=""
+                            title="">
+                    </div>
+                    <div id="rbtleftright" class="item-caption py-3">
+                        <div class="item-name px-2">
+                            <p class="mbr-fonts-style display-5">
+                                Kaung Khant</p>
+                        </div>
+                        <div class="item-role px-2">
+                            <p>Event Organizer</p>
+                        </div>
+                        <div class="item-social pt-2">
+                            <a href="https://instagram.com/" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100009591653088" target="_blank">
+                                <span class="p-1 socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-invision socicon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-item col-lg-3 col-md-6">
+                    <div class="item-image">
+                        <img id="rtopleftright"
+                            src="assets/images/124396726-2852785941672950-6931687812650460219-n-2-510x680.jpeg" alt=""
+                            title="">
+                    </div>
+                    <div id="rbtleftright" class="item-caption py-3">
+                        <div class="item-name px-2">
+                            <p class="mbr-fonts-style display-5">James</p>
+                        </div>
+                        <div class="item-role px-2">
+                            <p>Public Relation</p>
+                        </div>
+                        <div class="item-social pt-2">
+                            <a href="https://instagram.com/" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
+                            </a>
+                            <a href="https://www.facebook.com/profile.php?id=100015784025615" target="_blank">
+                                <span class="p-1 socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
+                            </a>
+                            <a href="https://www.linkedin.com" target="_blank">
+                                <span class="p-1 mbr-iconfont mbr-iconfont-social socicon-invision socicon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="header1 cid-scZ1L8kiPn" id="header16-2k">
+
+
+
+
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10 align-center">
+                    <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2">Wish letters from JCU Myanmar
+                        Almuni Students</h1>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="mbr-gallery mbr-slider-carousel cid-scYZxBTETA" id="gallery4-2j">
+
+
+
+        <div class="container">
+            <div>
+                <!-- Gallery -->
+                <div class="gallery-row">
+                    <div class="mbr-gallery-layout-default">
+                        <div>
+                            <div class="row-first row justify-content-center m-0">
+                                <div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false">
+                                    <div href="#lb-gallery4-2j" data-slide-to="0" data-toggle="modal"><img
+                                            src="assets/images/aung-myint-myat-htet-1080x1080-800x800.jpg" alt=""
+                                            title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false">
+                                    <div href="#lb-gallery4-2j" data-slide-to="1" data-toggle="modal"><img
+                                            src="assets/images/aung-thant-myat-1080x1080-800x800.jpg" alt=""
+                                            title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false">
+                                    <div href="#lb-gallery4-2j" data-slide-to="2" data-toggle="modal"><img
+                                            src="assets/images/hnin-thiri-zin-myint-1080x1080-800x800.jpg" alt=""
+                                            title=""><span class="icon-focus"></span></div>
+                                </div>
                             </div>
-                            <div class="col-auto  input-group-btn  m-2"><button type="submit" class="btn btn-primary m-0 display-4">Subscribe</button></div>
+                            <div class="row-second row justify-content-center m-0">
+                                <div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false">
+                                    <div href="#lb-gallery4-2j" data-slide-to="3" data-toggle="modal"><img
+                                            src="assets/images/hom-nan-nwe-htun-1080x1080-800x800.jpg" alt=""
+                                            title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false">
+                                    <div href="#lb-gallery4-2j" data-slide-to="4" data-toggle="modal"><img
+                                            src="assets/images/shoon-lei-tun-1080x1080-800x800.jpg" alt=""
+                                            title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item col-lg-4 col-md-4 col-sm-12 p-1" data-video-url="false">
+                                    <div href="#lb-gallery4-2j" data-slide-to="5" data-toggle="modal"><img
+                                            src="assets/images/k-phoo-thaw-naing-1080x1080-800x800.jpg" alt=""
+                                            title=""><span class="icon-focus"></span></div>
+                                </div>
+                            </div>
                         </div>
-                    </form><!---Formbuilder Form--->
+                        <div class="clearfix"></div>
+                    </div>
+                </div><!-- Lightbox -->
+                <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1"
+                    data-keyboard="true" data-interval="false" id="lb-gallery4-2j">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <ol class="carousel-indicators">
+                                    <li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="0">
+                                    </li>
+                                    <li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="1">
+                                    </li>
+                                    <li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="2">
+                                    </li>
+                                    <li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="3">
+                                    </li>
+                                    <li data-app-prevent-settings="" data-target="#lb-gallery4-2j" class=" active"
+                                        data-slide-to="4"></li>
+                                    <li data-app-prevent-settings="" data-target="#lb-gallery4-2j" data-slide-to="5">
+                                    </li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item"><img
+                                            src="assets/images/aung-myint-myat-htet-1080x1080.jpg" alt="" title="">
+                                    </div>
+                                    <div class="carousel-item"><img src="assets/images/aung-thant-myat-1080x1080.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/hnin-thiri-zin-myint-1080x1080.jpg" alt="" title="">
+                                    </div>
+                                    <div class="carousel-item"><img src="assets/images/hom-nan-nwe-htun-1080x1080.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item active"><img
+                                            src="assets/images/shoon-lei-tun-1080x1080.jpg" alt="" title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/k-phoo-thaw-naing-1080x1080.jpg"
+                                            alt="" title=""></div>
+                                </div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev"
+                                    href="#lb-gallery4-2j"><span class="mbri-left mbr-iconfont"
+                                        aria-hidden="true"></span><span class="sr-only">Previous</span></a><a
+                                    class="carousel-control carousel-control-next" role="button" data-slide="next"
+                                    href="#lb-gallery4-2j"><span class="mbri-right mbr-iconfont"
+                                        aria-hidden="true"></span><span class="sr-only">Next</span></a><a class="close"
+                                    href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="mb-4 mbr-fonts-style foot-title display-7">
-                    CONNECT WITH US
-                </p>
-                <div class="social-list pl-0 mb-0">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="mbr-section content4 cid-s9BWMA8fFY" id="content4-2g">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                        Covid-19 cases in Myanmar</h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section article content1 cid-s9BY7Av6c6" id="content1-2h">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text col-12 mbr-fonts-style display-7 col-md-12">
+                    <iframe
+                        src="https://ourworldindata.org/coronavirus-data-explorer?zoomToSelection=true&year=latest&time=2020-08-15..latest&country=~MMR&region=Asia&casesMetric=true&interval=total&hideControls=true&smoothing=0&pickerMetric=location&pickerSort=asc"
+                        width="100%" height="600px"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mbr-section content4 cid-s4BzRQtIi1" id="content4-o">
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center pb-3 mbr-fonts-style display-2">Articles</h2>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features3 cid-scZ60K4ohb" id="features3-2o">
+
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="assets/images/online-education-844x563.jpg" alt="Online Education" title="">
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title mbr-fonts-style display-7">Do’s and Don’ts of Online Classes</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">Due to the rapid advancement of technology
+                                students nowadays can study entirely online while still socializing with .....&nbsp;</p>
+                        </div>
+                        <div class="mbr-section-btn text-center"><a href="articles_01.html#content5-p"
+                                class="btn btn-primary display-4">
+                                Learn More
+                            </a></div>
+                    </div>
+                </div>
+
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="assets/images/struggles-of-student-life-in-singapore-628x419.png"
+                                alt="Student Life" title="">
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title mbr-fonts-style display-7">Struggles of student life in Singapore</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                Singapore is one of the ideal destinations in Southeast Asia for Studying Abroad for us
+                                students from .....</p>
+                        </div>
+                        <div class="mbr-section-btn text-center">
+                            <a href="article_02.html" class="btn btn-primary display-4">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-3 col-12 col-md-6 col-lg-4">
+                    <div class="card-wrapper">
+                        <div class="card-img">
+                            <img src="assets/images/article03-social-image-628x419.png" alt="Online Learning" title="">
+                        </div>
+                        <div class="card-box">
+                            <h4 class="card-title mbr-fonts-style display-7">How to be effective in online classes</h4>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                The COVID-19 resulted in the shutdown of schools all over the world.About 1.2 billion
+                                children worldwide are ....</p>
+                        </div>
+                        <div class="mbr-section-btn text-center"><a href="articles_03.html#content5-1o"
+                                class="btn btn-primary display-4">
+                                Learn More
+                            </a></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="header1 cid-sd06SzfeDt" id="header16-2r">
+
+
+
+
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10 align-center">
+                    <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-2">
+                        Our Activities</h1>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="mbr-gallery mbr-slider-carousel cid-scZasHb8vV" id="gallery2-2q">
+
+
+
+        <div class="container">
+            <div>
+                <!-- Filter -->
+                <div class="mbr-gallery-filter container gallery-filter-active">
+                    <ul buttons="0">
+                        <li class="mbr-gallery-filter-all"><a class="btn btn-md btn-primary-outline active display-7"
+                                href="">All</a></li>
+                    </ul>
+                </div><!-- Gallery -->
+                <div class="mbr-gallery-row">
+                    <div class="mbr-gallery-layout-default">
+                        <div>
+                            <div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="0" data-toggle="modal"><img
+                                            src="assets/images/img-6242-676x380-540x377.jpeg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Culture Show">
+                                    <div href="#lb-gallery2-2q" data-slide-to="1" data-toggle="modal"><img
+                                            src="assets/images/myanmar-mingalarpar-1-676x450-644x450.jpeg" alt=""
+                                            title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Let's Unite">
+                                    <div href="#lb-gallery2-2q" data-slide-to="2" data-toggle="modal"><img
+                                            src="assets/images/82879847-150303146413822-6276434253097992192-o-492x328-492x328.jpg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="3" data-toggle="modal"><img
+                                            src="assets/images/img-5143-2000x1500-800x600.jpg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="4" data-toggle="modal"><img
+                                            src="assets/images/img-5165-2000x1500-800x600.jpg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="5" data-toggle="modal"><img
+                                            src="assets/images/img-6170-2000x1500-800x600.jpg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="6" data-toggle="modal"><img
+                                            src="assets/images/img-6206-2000x1500-800x600.jpg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="7" data-toggle="modal"><img
+                                            src="assets/images/img-6218-2000x1125-800x450.jpg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="8" data-toggle="modal"><img
+                                            src="assets/images/img-6224-2000x1500-800x600.jpg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="9" data-toggle="modal"><img
+                                            src="assets/images/img-6231-2000x1500-800x600.jpg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Let's Unite">
+                                    <div href="#lb-gallery2-2q" data-slide-to="10" data-toggle="modal"><img
+                                            src="assets/images/82629561-150171676426969-1721509680640950272-o-1-1644x1500-800x606.jpeg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Let's Unite">
+                                    <div href="#lb-gallery2-2q" data-slide-to="11" data-toggle="modal"><img
+                                            src="assets/images/83147104-150235663087237-3814717809741529088-o-1350x1080-800x640.jpg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Let's Unite">
+                                    <div href="#lb-gallery2-2q" data-slide-to="12" data-toggle="modal"><img
+                                            src="assets/images/83173433-150300599747410-6487413547872550912-o-2000x1333-800x533.jpg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Let's Unite">
+                                    <div href="#lb-gallery2-2q" data-slide-to="13" data-toggle="modal"><img
+                                            src="assets/images/letsunite-2000x1333-800x533.jpg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Culture Show">
+                                    <div href="#lb-gallery2-2q" data-slide-to="14" data-toggle="modal"><img
+                                            src="assets/images/32186533-1933240426715908-8804020243346227200-o-2000x1500-800x600.jpg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Culture Show">
+                                    <div href="#lb-gallery2-2q" data-slide-to="15" data-toggle="modal"><img
+                                            src="assets/images/57174910-2468608353179110-5312320051989184512-n-960x720-800x600.jpg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Culture Show">
+                                    <div href="#lb-gallery2-2q" data-slide-to="16" data-toggle="modal"><img
+                                            src="assets/images/67500559-2669206483119295-7436907053240549376-o-2000x1333-800x533.jpg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Culture Show">
+                                    <div href="#lb-gallery2-2q" data-slide-to="17" data-toggle="modal"><img
+                                            src="assets/images/67755472-2669206649785945-1195774128485826560-o-2000x1333-800x533.jpg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Culture Show">
+                                    <div href="#lb-gallery2-2q" data-slide-to="18" data-toggle="modal"><img
+                                            src="assets/images/mingalar-2000x1500-800x528.jpeg" alt="" title=""><span
+                                            class="icon-focus"></span></div>
+                                </div>
+                                <div class="mbr-gallery-item mbr-gallery-item--p1" data-video-url="false"
+                                    data-tags="Welcoming Party">
+                                    <div href="#lb-gallery2-2q" data-slide-to="19" data-toggle="modal"><img
+                                            src="assets/images/46508463-2236564243050190-8938994942152278016-o-2000x1500-800x600.jpg"
+                                            alt="" title=""><span class="icon-focus"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div><!-- Lightbox -->
+                <div data-app-prevent-settings="" class="mbr-slider modal fade carousel slide" tabindex="-1"
+                    data-keyboard="true" data-interval="false" id="lb-gallery2-2q">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="assets/images/img-6242-676x380.jpeg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/myanmar-mingalarpar-1-676x450.jpeg" alt="" title="">
+                                    </div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/82879847-150303146413822-6276434253097992192-o-492x328.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/img-5143-2000x1500.jpg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/img-5165-2000x1500.jpg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/img-6170-2000x1500.jpg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/img-6206-2000x1500.jpg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/img-6218-2000x1125.jpg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/img-6224-2000x1500.jpg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/img-6231-2000x1500.jpg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/82629561-150171676426969-1721509680640950272-o-1-1644x1500.jpeg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/83147104-150235663087237-3814717809741529088-o-1350x1080.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/83173433-150300599747410-6487413547872550912-o-2000x1333.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/letsunite-2000x1333.jpg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/32186533-1933240426715908-8804020243346227200-o-2000x1500.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/57174910-2468608353179110-5312320051989184512-n-960x720.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/67500559-2669206483119295-7436907053240549376-o-2000x1333.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/67755472-2669206649785945-1195774128485826560-o-2000x1333.jpg"
+                                            alt="" title=""></div>
+                                    <div class="carousel-item"><img src="assets/images/mingalar-2000x1500.jpeg" alt=""
+                                            title=""></div>
+                                    <div class="carousel-item"><img
+                                            src="assets/images/46508463-2236564243050190-8938994942152278016-o-2000x1500.jpg"
+                                            alt="" title=""></div>
+                                </div><a class="carousel-control carousel-control-prev" role="button" data-slide="prev"
+                                    href="#lb-gallery2-2q"><span class="mbri-left mbr-iconfont"
+                                        aria-hidden="true"></span><span class="sr-only">Previous</span></a><a
+                                    class="carousel-control carousel-control-next" role="button" data-slide="next"
+                                    href="#lb-gallery2-2q"><span class="mbri-right mbr-iconfont"
+                                        aria-hidden="true"></span><span class="sr-only">Next</span></a><a class="close"
+                                    href="#" role="button" data-dismiss="modal"><span class="sr-only">Close</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="header7 cid-s1HKv03LR8" id="header7-d">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+
+                <div class="media-content align-right">
+                    <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">Unity is Strength</h1>
+                    <div class="mbr-section-text mbr-white pb-3">
+                        <p class="mbr-text mbr-fonts-style display-5">Presented By JCU Myanmar Community at <br>JCU
+                            Singapore Culture Event SP 52 2019</p>
+                    </div>
+                    <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+                            href="https://www.facebook.com/JCUMyanmar/videos/336583627288072">VIEW MORE</a></div>
+                </div>
+
+                <div class="mbr-figure" style="width: 100%;"><iframe class="mbr-embedded-video"
+                        src="https://www.youtube.com/embed/xA0v2xHVWTY?rel=0&amp;amp;showinfo=0&amp;autoplay=1&amp;loop=1&amp;playlist=xA0v2xHVWTY"
+                        width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="header3 cid-s42CHbeorS mbr-parallax-background" id="header3-h">
+
+
+
+        <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35);">
+        </div>
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-figure" style="width: 100%;">
+                    <img src="assets/images/social-good-895x748.png" alt="Social media" title="">
+                </div>
+
+                <div class="media-content">
+                    <h1 class="mbr-section-title mbr-white pb-3 mbr-fonts-style display-1">MCC on Social Media</h1>
+
+                    <div class="mbr-section-text mbr-white pb-3 ">
+                        <p class="mbr-text mbr-fonts-style display-5">Follow our facebook page and Instagram account to
+                            get latest update about JCU Myanmar Community Club</p>
+                    </div>
+                    <div class="mbr-section-btn"><a class="btn btn-md btn-primary display-4"
+                            href="https://www.facebook.com/JCUMyanmar">Facebook</a>
+                        <a class="btn btn-md btn-secondary display-4"
+                            href="https://www.instagram.com/jcu_myanmar/">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer4 cid-s1H6LtvjVs" id="footer4-8">
+
+
+
+
+
+        <div class="container">
+            <div class="media-container-row content mbr-white">
+                <div class="col-md-3 col-sm-4">
+                    <div class="mb-3 img-logo">
+                        <a href="https://www.facebook.com/jcumyanmar">
+                            <img id="rcorners4" src="assets/images/mcc_white.png" alt="JCU MCC logo"
+                                title="MCC Christmas theme logo">
+                        </a>
+                    </div>
+                    <p class="mb-3 mbr-fonts-style foot-title display-7">JCU-MCC<br></p>
+                    <p class="mbr-text mbr-fonts-style mbr-links-column display-7">
+                        <a href="index.html#team1-c" class="text-white">About Us</a>
+                        <br><a href="index.html#features18-3" class="text-white">A</a>ctivities
+                        &nbsp;<br><a href="index.html#header3-h" class="text-white">Get In Touch</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-sm-8">
+                    <p class="mb-4 foot-title mbr-fonts-style display-7">
+                        JCU Myamar Community Club</p>
+                    <p class="mbr-text mbr-fonts-style foot-text display-7">We provide help that any of Burmese students
+                        may require, and constantly hold events and performances at the university. &nbsp; &nbsp; &nbsp;
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br><br></p>
+                </div>
+                <div class="col-md-4 offset-md-1 col-sm-12">
+                    <p class="mb-4 foot-title mbr-fonts-style display-7">
+                        SUBSCRIBE
+                    </p>
+                    <p class="mbr-text mbr-fonts-style form-text display-7">
+                        Get monthly updates information!</p>
+                    <div class="media-container-column" data-form-type="formoid">
+                        <!---Formbuilder Form--->
+                        <form action="https://jcumyanmar.me" method="POST" class="mbr-form form-with-styler"
+                            data-form-title="MCC Form"><input type="hidden" name="email" data-form-email="true"
+                                value="R4/vjPDQ0w5FdYPAzApqcLrbAEGzykRXgLnomG9YsoFeN97vT/ngFkfycHVb7QtdwBFrmWIKf5Wrn25PJ4SFvGtaBoAzIHkQ2XuoBBRHOGVazbqu1FXrXkVkBTBS30yz">
+                            <div class="row form-inline justify-content-center">
+                                <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for
+                                    filling out the form!</div>
+                                <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                                </div>
+                            </div>
+                            <div class="dragArea row form-inline justify-content-center">
+                                <div class="col-auto  form-group " data-for="email">
+                                    <input type="email" name="email" placeholder="Email" data-form-field="Email"
+                                        required="required" class="form-control input-sm input-inverse my-2 display-7"
+                                        id="email-footer4-8">
+                                </div>
+                                <div class="col-auto  input-group-btn  m-2"><button type="submit"
+                                        class="btn btn-primary m-0 display-4">Subscribe</button></div>
+                            </div>
+                        </form>
+                        <!---Formbuilder Form--->
+                    </div>
+                    <p class="mb-4 mbr-fonts-style foot-title display-7">
+                        CONNECT WITH US
+                    </p>
+                    <div class="social-list pl-0 mb-0">
                         <div class="soc-item">
                             <a href="https://www.instagram.com/jcu_myanmar/" target="_blank">
                                 <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon"></span>
@@ -517,53 +1065,54 @@
                                 <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon"></span>
                             </a>
                         </div>
-                        
-                        
-                        
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower">
+                <div class="media-container-row">
+                    <div class="col-sm-12">
+                        <hr>
+                    </div>
+                </div>
+                <div class="media-container-row mbr-white">
+                    <div class="col-sm-12 copyright">
+                        <p class="mbr-text mbr-fonts-style display-7">
+                            © Copyright 2020 JCU Myanmar Community Club - All Rights Reserved
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer-lower">
-            <div class="media-container-row">
-                <div class="col-sm-12">
-                    <hr>
-                </div>
-            </div>
-            <div class="media-container-row mbr-white">
-                <div class="col-sm-12 copyright">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2020 JCU Myanmar Community Club - All Rights Reserved
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
-  <script src="assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="assets/popper/popper.min.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/dropdown/js/nav-dropdown.js"></script>
-  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
-  <script src="assets/parallax/jarallax.min.js"></script>
-  <script src="assets/masonry/masonry.pkgd.min.js"></script>
-  <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
-  <script src="assets/tether/tether.min.js"></script>
-  <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
-  <script src="assets/countdown/jquery.countdown.min.js"></script>
-  <script src="assets/theme/js/script.js"></script>
-  <script src="assets/slidervideo/script.js"></script>
-  <script src="assets/gallery/player.min.js"></script>
-  <script src="assets/gallery/script.js"></script>
-  <script src="assets/formoid/formoid.min.js"></script>
-  
-  
- <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/popper/popper.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/dropdown/js/nav-dropdown.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+    <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+    <script src="assets/parallax/jarallax.min.js"></script>
+    <script src="assets/masonry/masonry.pkgd.min.js"></script>
+    <script src="assets/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+    <script src="assets/tether/tether.min.js"></script>
+    <script src="assets/vimeoplayer/jquery.mb.vimeo_player.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+    <script src="assets/slidervideo/script.js"></script>
+    <script src="assets/gallery/player.min.js"></script>
+    <script src="assets/gallery/script.js"></script>
+    <script src="assets/formoid/formoid.min.js"></script>
+
+
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
+                class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">
-  </body>
+</body>
+
 </html>
